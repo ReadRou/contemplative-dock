@@ -24,4 +24,5 @@ module.exports = app => {
      */
     router.all('/404', controller.other.api404);
     router.get('/test', controller.other.test);
+    router.get('/getIP', controller.other.getIP);
 };

@@ -6,7 +6,7 @@ module.exports = options => {
         }
         await next();
         if (ctx.body) {
-            ctx.body = ctx.helper.encrypt(ctx.body)
+            // ctx.body = ctx.helper.encrypt(ctx.body)
         }
     }
 };
