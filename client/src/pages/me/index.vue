@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{ app.io.homeResponse }}</h1>
+        <h1>{{ me.response }}</h1>
         <mu-button color="primary" @click="handleClick">发送socket</mu-button>
     </div>
 </template>
@@ -15,17 +15,19 @@
     export default {
         name    : "mePage",
         computed: {
-            ...mapState(['app']),
+            ...mapState(['me']),
         },
         methods : {
-            ...mapActions(['socketCommitTestData']),
+            ...mapActions(['meCommitResponse']),
             handleClick() {
-                this.$socket.emit('home_today_index', 'hello')
+                this.$socket.emit('me_index', {
+                    unknow: 'hello'
+                })
             }
         },
         mounted() {
-            this.sockets.subscribe('home_response', (data) => {
-                this.socketCommitTestData(data)
+            this.sockets.subscribe('me_response', (data) => {
+                this.meCommitResponse(data)
             });
         }
     };

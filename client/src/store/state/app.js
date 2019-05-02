@@ -4,10 +4,5 @@ export default {
         title  : '',
         content: '',
         isOpen : false,
-    },
-    io    : {
-        homeResponse: {
-            client:'world'
-        }
     }
 }

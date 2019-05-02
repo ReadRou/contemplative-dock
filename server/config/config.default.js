@@ -88,7 +88,7 @@ module.exports = appInfo => {
      * @type {{allowMethods: string, origin: string}}
      */
     config.cors = {
-        origin      : 'http://localhost:8080',   // 跨域设置cookios 不能设为 *
+        origin      : '*',   // 跨域设置cookios 不能设为 *
         credentials : true,
         allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
     };

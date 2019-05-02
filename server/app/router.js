@@ -20,6 +20,11 @@ module.exports = app => {
     io.route('home_month_list_index', io.controller.home.home_month_list_index);
 
     /**
+     * me
+     */
+    io.route('me_index', io.controller.me.me_index);
+
+    /**
      * http
      */
     router.all('/404', controller.other.api404);
