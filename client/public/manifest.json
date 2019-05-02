@@ -1,0 +1,24 @@
+{
+  "name": "沉思坞",
+  "description": "广州科技在线教育平台",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/webp"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "72x72 96x96 128x128 256x256"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "72x72"
+    }
+  ]
+}

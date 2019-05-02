@@ -19,7 +19,7 @@ module.exports = appInfo => {
      */
     config.cluster = {
         listen: {
-            port    : 80,
+            port    : 7001,
             hostname: '0.0.0.0',
         }
     };
@@ -88,7 +88,8 @@ module.exports = appInfo => {
      * @type {{allowMethods: string, origin: string}}
      */
     config.cors = {
-        origin      : '*',
+        origin      : 'http://localhost:8080',   // 跨域设置cookios 不能设为 *
+        credentials : true,
         allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
     };
 

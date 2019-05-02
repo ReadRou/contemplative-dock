@@ -4,10 +4,9 @@
 </template>
 
 <script>
-
     export default {
         name      : "discoverPage",
-        components: {}
+        components: {},
     };
 </script>
 
