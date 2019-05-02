@@ -1,0 +1,52 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "circular-json": "^0.5.9",
+    "crypto-js": "^3.1.9-1",
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.0",
+    "egg-mongoose": "^3.1.1",
+    "egg-redis": "^2.3.2",
+    "egg-scripts": "^2.11.0",
+    "egg-socket.io": "^4.1.5",
+    "moment": "latest",
+    "socket.io-client": "latest"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-server --sticky",
+    "stop": "egg-scripts stop --title=egg-server-server",
+    "dev": "egg-bin dev --sticky",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "luoxh",
+  "license": "MIT"
+}
