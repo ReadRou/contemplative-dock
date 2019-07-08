@@ -1,0 +1,8 @@
+{
+  "apps": [
+    {
+      "name": "contemplative-dock-client",
+      "script": "npm start"
+    }
+  ]
+}
