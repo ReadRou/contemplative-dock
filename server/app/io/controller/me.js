@@ -9,10 +9,9 @@ class MeController extends Controller {
         console.log(data);
         ctx.socket.emit('me_response', {
             sender  : 'me',
-            function: 'me_index',
+            router: 'me_index',
             data    : {
-                server: 'hello',
-                msg   : `I have got your msg:${ JSON.stringify(data) }`,
+                msg     : '我是罗兴惠，这是一个移动端的alpha例子，用于项目展示',
             }
         })
     }

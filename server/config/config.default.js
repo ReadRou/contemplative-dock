@@ -19,7 +19,7 @@ module.exports = appInfo => {
      */
     config.cluster = {
         listen: {
-            port    : 7001,
+            port: 7001,
             hostname: '0.0.0.0',
         }
     };
@@ -29,7 +29,7 @@ module.exports = appInfo => {
      * @type {{options: {}, url: string}}
      */
     config.mongoose = {
-        url    : 'mongodb://127.0.0.1/contemplative-dock',
+        url: 'mongodb://127.0.0.1/contemplative-dock',
         options: {},
     };
 
@@ -46,19 +46,19 @@ module.exports = appInfo => {
      */
     config.io = {
         namespance: {
-            '/'  : {
+            '/': {
                 connectionMiddleware: [],
-                packetMiddleware    : [],
+                packetMiddleware: [],
             },
             '/im': {
                 connectionMiddleware: [],
-                packetMiddleware    : [],
+                packetMiddleware: [],
             },
         },
-        redis     : {
+        redis: {
             host: '127.0.0.1',
             post: 6379,
-            db  : 1,
+            db: 1,
         }
     };
 
@@ -77,8 +77,8 @@ module.exports = appInfo => {
      * security
      */
     config.security = {
-        csrf           : {
-            enable    : false,
+        csrf: {
+            enable: false,
             ignoreJSON: true
         },
         domainWhiteList: ['*']
@@ -88,8 +88,8 @@ module.exports = appInfo => {
      * @type {{allowMethods: string, origin: string}}
      */
     config.cors = {
-        origin      : '*',   // 跨域设置cookios 不能设为 *
-        credentials : true,
+        origin: '*', // 跨域设置cookios 不能设为 *
+        credentials: true,
         allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
     };
 

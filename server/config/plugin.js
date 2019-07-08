@@ -7,23 +7,23 @@ module.exports = {
     //   enable: true,
     // }
     mongoose: {
-        enable : true,
+        enable: true,
         package: 'egg-mongoose',
     },
-    io      : {
-        enable : true,
+    io: {
+        enable: true,
         package: 'egg-socket.io',
     },
-    redis   : {
-        enable : true,
+    redis: {
+        enable: true,
         package: 'egg-redis',
     },
-    cors    : {
-        enable : true,
+    cors: {
+        enable: true,
         package: 'egg-cors',
     },
-    origin  : {
-        enable : true,
+    origin: {
+        enable: true,
         package: 'egg-origin',
     }
 };
